@@ -1,0 +1,213 @@
+@import"colores", "estructura", "tipografia";
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+
+
+        .navbar-nav .nav-link  {
+        font-family: $font-family-Bebas;
+        justify-content: center ;
+        margin-left: 3.5em;
+        margin-right: 2em;
+    }
+
+       .color_nav_link {
+        color: $color_vinotinto;
+       }
+
+       @mixin imagenfondo {
+        background-repeat: no-repeat;
+        background-size:50em;
+        background-position-x: right;
+        background-position-y: bottom;
+    }
+
+     .imagen_fondo_h1{
+        background-color: $color_salmon;
+        background-image: url("../images/perritoblanco.png");
+        @include imagenfondo; 
+      }
+
+      .imagen_fondo_h2{
+        background-color: $color_rosa;
+        background-image: url("../images/catsiames.png");
+        @include imagenfondo; 
+      }
+
+      .imagen_fondo_h3{
+        background-color: $color_rosa;
+        background-image: url("../images/pastorbelga.png");
+        @include imagenfondo; 
+      }
+      
+      .main_hero2 {
+        background-color: $color_rosa;
+
+      }
+
+      .main_hero3 {
+        background-color: $color_verde;
+
+      }
+      
+        
+      @mixin mainherostyle {
+        font-family: $font-family-RobotoCondensed;
+        opacity: 75%;
+        text-align: center;
+        font-size: 9.5em;
+        font-weight: bold;
+        font-size: 9.5em;
+    }
+
+        .main_hero1 .hero-txt1 {
+            color: $color_vinotinto;
+            @include mainherostyle; 
+            border-bottom: 5em;
+        }
+
+          
+          
+          .hero-txt2 {
+            color: $color_salmon;
+            @include mainherostyle; 
+
+          }
+          
+           .hero-txt3 {
+            color: $color_rosa;
+            @include mainherostyle; 
+          }
+          
+          
+          /*Btn*/
+           .btn-primary {
+            font-family: $font-family-Bebas;
+            letter-spacing: 1px;
+            font-size: 0.8em;
+            width: max-content;
+            align-self: center;
+          }
+          
+          /*Btn1*/
+          
+           .btn-primary1{
+            border-color: $color_vinotinto;
+            background-color: $color_vinotinto;
+          }
+          
+
+          /*Btn2*/
+           .btn-primary2{
+            border-color: $color_salmon;
+            background-color: $color_salmon;
+          }
+          
+          /*Btn3*/
+           .btn-primary3{
+            border-color: $color_rosa;
+            background-color: $color_rosa;
+          }
+          
+          
+          
+          
+          /* main_hero_p */
+          .main_hero_p {
+            color: $color_vinotinto;
+            margin-top: 5em;
+            margin-bottom: 5em;
+            padding-left: 6em;
+            text-align: start;
+            font-size: 0.9em;
+          }
+          
+          
+          
+          
+          
+          /*Footer*/
+          
+          footer {
+            grid-area:footer;
+            padding: 1% 0 1% ;
+            text-align: center;
+            justify-self: center;
+            align-self: center;
+            background-color: $color_verde;
+          }
+          
+          footer .ftext  {
+            font-family: 'Roboto Condensed', sans-serif;
+            color: $color_vinotinto;
+            font-size: 0.7em;
+            padding-top: 0.5em;
+            width: 50em;
+          
+          }
+
+
+
+ /*CONTACTENOS*/
+
+
+@keyframes showTopText {
+  0% { transform: translate3d(0, 100%, 0); }
+  40%, 60% { transform: translate3d(0, 50%, 0); }
+  100% { transform: translate3d(0, 0, 0); }
+}
+@keyframes showBottomText {
+  0% { transform: translate3d(0, -100%, 0); }
+  100% { transform: translate3d(0, 0, 0); }
+}
+.animated-title {
+  color: #222;
+  font-family: Roboto, Arial, sans-serif;
+  height: 90vmin;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 90vmin;
+}
+.animated-title > div {
+  height: 50%;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+}
+.animated-title > div div {
+  font-size: 12vmin;
+  padding: 2vmin 0;
+  position: absolute;
+}
+.animated-title > div div span {
+  display: block;
+}
+.animated-title > div.text-top {
+  border-bottom: 1vmin solid #000;
+  top: 0;
+}
+.animated-title > div.text-top div {
+  animation: showTopText 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+  bottom: 0;
+  transform: translate(0, 100%);
+}
+.animated-title > div.text-top div span:first-child {
+  color: #767676;
+}
+.animated-title > div.text-bottom {
+  bottom: 0;
+}
+.animated-title > div.text-bottom div {
+  animation: showBottomText 0.5s;
+  animation-delay: 1.75s;
+  animation-fill-mode: forwards;
+  top: 0;
+  transform: translate(0, -100%);
+}
+          
+
+
+
