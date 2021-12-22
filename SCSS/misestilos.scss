@@ -1,213 +1,946 @@
-@import"colores", "estructura", "tipografia";
+@import"colores",
+"estructura",
+"tipografia";
 @import "../node_modules/bootstrap/scss/bootstrap";
 @import url('https://fonts.googleapis.com/css?family=Roboto:700');
 
 
-        .navbar-nav .nav-link  {
-        font-family: $font-family-Bebas;
-        justify-content: center ;
-        margin-left: 3.5em;
-        margin-right: 2em;
-    }
-
-       .color_nav_link {
-        color: $color_vinotinto;
-       }
-
-       @mixin imagenfondo {
-        background-repeat: no-repeat;
-        background-size:50em;
-        background-position-x: right;
-        background-position-y: bottom;
-    }
-
-     .imagen_fondo_h1{
-        background-color: $color_salmon;
-        background-image: url("../images/perritoblanco.png");
-        @include imagenfondo; 
-      }
-
-      .imagen_fondo_h2{
-        background-color: $color_rosa;
-        background-image: url("../images/catsiames.png");
-        @include imagenfondo; 
-      }
-
-      .imagen_fondo_h3{
-        background-color: $color_rosa;
-        background-image: url("../images/pastorbelga.png");
-        @include imagenfondo; 
-      }
-      
-      .main_hero2 {
-        background-color: $color_rosa;
-
-      }
-
-      .main_hero3 {
-        background-color: $color_verde;
-
-      }
-      
-        
-      @mixin mainherostyle {
-        font-family: $font-family-RobotoCondensed;
-        opacity: 75%;
-        text-align: center;
-        font-size: 9.5em;
-        font-weight: bold;
-        font-size: 9.5em;
-    }
-
-        .main_hero1 .hero-txt1 {
-            color: $color_vinotinto;
-            @include mainherostyle; 
-            border-bottom: 5em;
-        }
-
-          
-          
-          .hero-txt2 {
-            color: $color_salmon;
-            @include mainherostyle; 
-
-          }
-          
-           .hero-txt3 {
-            color: $color_rosa;
-            @include mainherostyle; 
-          }
-          
-          
-          /*Btn*/
-           .btn-primary {
-            font-family: $font-family-Bebas;
-            letter-spacing: 1px;
-            font-size: 0.8em;
-            width: max-content;
-            align-self: center;
-          }
-          
-          /*Btn1*/
-          
-           .btn-primary1{
-            border-color: $color_vinotinto;
-            background-color: $color_vinotinto;
-          }
-          
-
-          /*Btn2*/
-           .btn-primary2{
-            border-color: $color_salmon;
-            background-color: $color_salmon;
-          }
-          
-          /*Btn3*/
-           .btn-primary3{
-            border-color: $color_rosa;
-            background-color: $color_rosa;
-          }
-          
-          
-          
-          
-          /* main_hero_p */
-          .main_hero_p {
-            color: $color_vinotinto;
-            margin-top: 5em;
-            margin-bottom: 5em;
-            padding-left: 6em;
-            text-align: start;
-            font-size: 0.9em;
-          }
-          
-          
-          
-          
-          
-          /*Footer*/
-          
-          footer {
-            grid-area:footer;
-            padding: 1% 0 1% ;
-            text-align: center;
-            justify-self: center;
-            align-self: center;
-            background-color: $color_verde;
-          }
-          
-          footer .ftext  {
-            font-family: 'Roboto Condensed', sans-serif;
-            color: $color_vinotinto;
-            font-size: 0.7em;
-            padding-top: 0.5em;
-            width: 50em;
-          
-          }
 
 
 
- /*CONTACTENOS*/
-
-
-@keyframes showTopText {
-  0% { transform: translate3d(0, 100%, 0); }
-  40%, 60% { transform: translate3d(0, 50%, 0); }
-  100% { transform: translate3d(0, 0, 0); }
+.container-fluid .navbar-nav .nav-link {
+	font-family: $font-family-Bebas;
+	justify-content: center;
+	margin-left: 3.5em;
+	margin-right: 2em;
+	color: $color_vinotinto;
 }
-@keyframes showBottomText {
-  0% { transform: translate3d(0, -100%, 0); }
-  100% { transform: translate3d(0, 0, 0); }
+
+.nosotrosnav {
+	background-color:$color_salmon ;
+	border-color:$color_salmon  ;
 }
-.animated-title {
-  color: #222;
-  font-family: Roboto, Arial, sans-serif;
-  height: 90vmin;
-  left: 50%;
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 90vmin;
+
+.pomeranianav {
+	background-color:$color_salmon ;
+	border-color:$color_salmon  ;
+	
 }
-.animated-title > div {
-  height: 50%;
-  overflow: hidden;
-  position: absolute;
-  width: 100%;
+
+.perronav {
+	background-color:$color_verde ;
+	border-color:$color_verde  ;
 }
-.animated-title > div div {
-  font-size: 12vmin;
-  padding: 2vmin 0;
-  position: absolute;
+
+.gatonav {
+	background-color:$color_rosa ;
+	border-color:$color_rosa  ;
+
 }
-.animated-title > div div span {
-  display: block;
-}
-.animated-title > div.text-top {
-  border-bottom: 1vmin solid #000;
-  top: 0;
-}
-.animated-title > div.text-top div {
-  animation: showTopText 1s;
-  animation-delay: 0.5s;
-  animation-fill-mode: forwards;
-  bottom: 0;
-  transform: translate(0, 100%);
-}
-.animated-title > div.text-top div span:first-child {
-  color: #767676;
-}
-.animated-title > div.text-bottom {
-  bottom: 0;
-}
-.animated-title > div.text-bottom div {
-  animation: showBottomText 0.5s;
-  animation-delay: 1.75s;
-  animation-fill-mode: forwards;
-  top: 0;
-  transform: translate(0, -100%);
-}
-          
 
 
+
+@mixin imagenfondo {
+	background-repeat: no-repeat;
+	background-size: 50em;
+	background-position-x: right;
+	background-position-y: bottom;
+}
+
+.imagen_fondo_h1 {
+	background-color: $color_salmon;
+	border-color:$color_salmon;
+	background-image: url("../images/perritoblanco.png");
+	@include imagenfondo;
+}
+
+.imagen_fondo_h2 {
+	background-color: $color_rosa;
+	border-color:$color_rosa  ;
+	background-image: url("../images/catsiames.png");
+	@include imagenfondo;
+}
+
+.imagen_fondo_h3 {
+	background-color: $color_verde;
+	border-color:$color_verde  ;
+	background-image: url("../images/pastorbelga.png");
+	@include imagenfondo;
+}
+
+
+.main_hero1 {
+	background-color: $color_salmon;
+}
+
+
+.main_hero2 {
+	background-color: $color_rosa;
+}
+
+.main_hero3 {
+	background-color: $color_verde;
+}
+
+
+
+@mixin mainherostyle {
+	font-family: $font-family-RobotoCondensed;
+	opacity: 75%;
+	text-align: center;
+	font-size: 9.5em;
+	font-weight: bold;
+}
+
+ .hero-txt1 {
+	color: $color_vinotinto;
+	@include mainherostyle;
+	border-bottom: 5em;
+	border-color:$color_salmon  ;
+}
+
+.hero-txt2 {
+	color: $color_salmon;
+	@include mainherostyle;
+}
+
+.hero-txt3 {
+	color: $color_rosa;
+	@include mainherostyle;
+}
+
+
+@media only screen and (max-width: 820px) {
+	.hero-txt1 {
+	  font-size: 7em;
+	}
+	.hero-txt2 {
+		font-size: 7em;
+	  }
+  .hero-txt3 {
+		font-size: 7em;
+	  }
+  }
+
+  @media only screen and (max-width: 620px) {
+	.hero-txt1 {
+	  font-size: 5em;
+	}
+	.hero-txt2 {
+		font-size: 5em;
+	  }
+  .hero-txt3 {
+		font-size: 5em;
+	  }
+	  .herocont {
+		width: 100%;
+	}
+  }
+
+  @media only screen and (max-width: 575px) {
+	.hero-txt1 {
+	  font-size: 3.8em;
+	}
+	.hero-txt2 {
+		font-size: 3.8em;
+	  }
+  .hero-txt3 {
+		font-size: 3.8em;
+	  }
+  .herocont {
+		  width: 100%;
+	  }
+	  .imagen_fondo_h1.imagenfondo {
+		background-size: 30em;
+		background-position: center;
+	}
+	.contenedor.imagen_fondo_h2.imagenfondo {
+		background-size: 30em;
+		background-position: center;
+
+	}
+	.contenedor.imagen_fondo_h3.imagenfondo {
+		background-size: 30em;
+		background-position:center;
+	}
+  }
+
+/*Btn*/
+
+.btn-primary {
+	font-family: $font-family-Bebas;
+	letter-spacing: 1px;
+	font-size: 0.8em;
+	width: max-content;
+	align-self: center;
+}
+
+
+/*Btn1*/
+
+.btn-primary1 {
+	border-color: $color_vinotinto;
+	background-color: $color_vinotinto;
+}
+
+	.btn-primary1:hover {
+	  background-color: $color_rosa;
+	  border-color: $color_rosa; }
+
+
+/*Btn2*/
+
+.btn-primary2 {
+	border-color: $color_salmon;
+	background-color: $color_salmon;
+}
+
+.btn-primary2:hover {
+	background-color: $color_vinotinto;
+	border-color: $color_vinotinto; }
+
+
+/*Btn3*/
+
+.btn-primary3 {
+	border-color: $color_rosa;
+	background-color: $color_rosa;
+}
+
+.btn-primary3:hover {
+	background-color: $color_salmon;
+	border-color: $color_salmon; }
+
+
+/* main_hero_p */
+
+.main_hero_p {
+	color: $color_vinotinto;
+	margin-top: 5em;
+	margin-bottom: 5em;
+	padding-left: 6em;
+	text-align: start;
+	font-size: 0.9em;
+}
+
+
+
+
+
+
+/*Footer*/
+
+.footer_index {
+	padding: 1% 0 1% 0;
+	text-align: center;
+	justify-self: center;
+	align-self: center;
+	background-color: $color_verde;
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
+.footer_other{
+	text-align: center;
+	justify-self: center;
+	align-self: center;
+	padding: 1% 0 1% 0;
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
+
+
+/*ANIMAL*/
+
+
+/*ANIMAL - POMERANIA*/
+
+@mixin animalcover {
+	background-repeat: no-repeat;
+	position: relative;
+	height: 90vmin;
+}
+
+.imagen_fondo_pomerania {
+	background-image: url("../images/pomeraniaduotono2.png");
+	background-position: center;
+	background-size: cover;
+	@include animalcover;
+}
+
+
+/*ANIMAL - gatosiames*/
+
+.imagen_fondo_gato {
+	background-image: url("../images/gatrodual2.png");
+	@include animalcover;
+	background-position-y: bottom;
+	background-position-x:left;
+	background-size: 60em;
+	background-color: $color_rosa;
+}
+
+
+/*ANIMAL - perro*/
+
+.imagen_fondo_perro {
+	background-image: url("../images/pastorduotono.png");
+	background-repeat: no-repeat;
+	height: 90vmin;
+	background-size: 55em;
+	background-color: $color_verde;
+	background-position-y: bottom;
+}
+
+
+/*ANIMAL */
+
+
+/*container font*/
+
+.container {
+	font-family: $font-family-RobotoCondensed;
+	align-content: center;
+}
+
+
+/*card images same size*/
+
+.card-img-top {
+	width: 100%;
+	height: 15vw;
+	object-fit: cover;
+}
+
+
+/*Badges*/
+
+.badgep {
+	background-color: $color_vinotinto;
+	font-family: $font-family-RobotoCondensed;
+	font-weight: normal;
+}
+
+
+.badgeh {
+	background-color: $color_salmon;
+	font-family: $font-family-RobotoCondensed;
+	font-weight: normal;
+}
+
+.badgem {
+	background-color: $color_verde;
+	font-family: $font-family-RobotoCondensed;
+	font-weight: normal;
+}
+
+
+/*Info section after hero animal */
+
+.header-box {
+	padding: 5em 3em 0em 3em;
+}
+
+@mixin h2title {
+	font-size: 3rem;
+	font-weight: 600;
+	display: inline-block;
+	margin-top: 0;
+}
+
+@mixin ejemplares_p {
+	color: $color-negro;
+	font-family: $font-family-RobotoCondensed;
+	line-height: 26px;
+}
+
+.page-header1 {
+	border-bottom: 3px solid $color_vinotinto;
+	margin-bottom: 30px;
+	p {
+		@include ejemplares_p();
+	}
+}
+
+.page-header2 {
+	border-bottom: 3px solid $color_rosa;
+	margin-bottom: 30px;
+	p {
+		@include ejemplares_p();
+	}
+}
+
+.page-header3 {
+	border-bottom: 3px solid $color_salmon;
+	margin-bottom: 30px;
+	p {
+		@include ejemplares_p();
+	}
+}
+
+.page-header1 h2 {
+	color: $color_vinotinto;
+	@include h2title();
+}
+
+.page-header2 h2 {
+	color: $color_rosa;
+	@include h2title();
+}
+
+.page-header3 h2 {
+	color: $color_salmon;
+	@include h2title();
+}
+
+
+
+
+
+
+/*NOSOTROS SECTION */
+
+.about-section {
+	background-color: $color_salmon;
+}
+
+.image-column #logonosotros{
+	max-width: 60%;
+	background-color: $color_salmon;
+	margin-top: 15%;
+}
+
+.image-column2 {
+	max-width: 60%;
+}
+
+.sec-title h2 {
+	@include mainherostyle();
+	font-size: 50px;
+	text-align: left;
+	color: $color_vinotinto;
+	margin-bottom: 0%;
+	padding-bottom: 0%;
+	margin-top: 10%;
+	padding-top: 0%;
+}
+
+
+.sec-titlecontact h2 {
+	@include mainherostyle();
+	font-size: 50px;
+	text-align: left;
+	color: $color_vinotinto;
+	margin-bottom: 0%;
+	padding-bottom: 0%;
+	margin-top: 25%;
+	padding-top: 0%;
+}
+
+@media only screen and (max-width: 450px) {
+	.sec-title .h2{
+		font-size: 6.5em;
+	}
+	.about-section{
+		align-self: center;
+	}
+}
+
+.about-section .subtitle {
+	font-family: $font-family-Bebas;
+	font-weight: lighter;
+	color: $color_vinotinto;
+	margin-bottom: 2em;
+	font-size: 15px;
+}
+
+.about-section .text {
+	margin-bottom: 70px;
+	font-size: 14px;
+	color: $color_vinotinto;
+	font-weight: lighter ;
+	font-family: $font-family-RobotoCondensed;
+	width: 90%;
+}
+
+
+/*cards colors values */
+
+
+
+.border-color1{
+	border-color:$color_rosa;
+	border-radius:0%;
+	align-items: stretch;
+	justify-items: center;
+	margin-bottom: 0;
+	margin-top: 0;
+	.card-body1{
+		background-color: $color_rosa;
+		padding-top: 2em;
+		padding-bottom: 2em;
+	}
+	.card-title{
+		font-family: $font-family-RobotoCondensed;
+		font-weight: bold;
+	}
+	.card-text{
+		font-weight: lighter;
+		font-size: 12px;
+
+	}
+}
+
+.border-color2{
+	border-color:$color_verde;
+	border-radius:0%;
+	align-items: stretch;
+	justify-items: center;
+	margin-bottom: 0;
+	margin-top: 0;
+	.card-body2{
+		background-color: $color_verde;
+		padding-top: 2em;
+		padding-bottom: 2em;
+	}
+	.card-title{
+		font-family: $font-family-RobotoCondensed;
+		font-weight: bold;
+	}
+	.card-text{
+		font-weight: lighter;
+		font-size: 12px;
+
+	}
+}
+
+.border-color3{
+	border-color:$color_rosa;
+	border-radius:0%;
+	align-items: stretch;
+	justify-items: center;
+	margin-bottom: 0;
+	margin-top: 0;
+
+	.card-body3{
+		background-color: $color_rosa;
+		padding-top: 2em;
+		padding-bottom: 2em;
+	}
+	.card-title{
+		font-family: $font-family-RobotoCondensed;
+		font-weight: bold;
+	}
+	.card-text{
+		font-weight: lighter;
+		font-size: 12px;
+
+	}
+}
+
+
+
+@mixin cardsstyle {
+
+	font-family: $font-family-RobotoCondensed;
+	font-weight: lighter;
+	font-size: 12px;
+	width: 80% ;
+}
+
+
+
+
+
+
+
+
+
+
+/*nosotros */
+/*cuidados */
+
+.service-title h2 {
+	position: relative;
+	margin-bottom: 45px;
+	display: inline-block;
+	font-weight: 600;
+	line-height: 1;
+	margin-top: 100px;
+	font-size: 40PX;
+}
+
+.service-title h2::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	width: 60px;
+	height: 2px;
+	background: $color_vinotinto;
+	bottom: -25px;
+	margin: auto;
+	right: 0;
+}
+
+
+.service-title .p {
+
+	margin-bottom: 10px;
+	font-weight: lighter;
+}
+
+.about-info-text h2 {
+	margin-bottom: 23px;
+	text-transform: capitalize;
+	font-weight: 700;
+	line-height: .9;
+	font-size: 20px;
+	font-stretch: semi-expanded;
+}
+
+.about-info-text p {
+	padding: 0 100px;
+	font-size: 18px;
+	margin-bottom: 26px;
+	font-weight: 700;
+	position: relative;
+	font-family:$font-family-RobotoCondensed;
+}
+
+.about-content p {
+	margin-bottom: 0;
+}
+
+.about-info-text a {
+	margin-bottom: 20px;
+	position: relative;
+}
+
+
+
+
+/*caja 1 */
+
+.service-wrap1 {
+	border: 1px solid #e6e6e6;
+	padding: 50px 30px;
+	position: relative;
+}
+
+.service-wrap1 p {
+	position: relative;
+}
+
+.service-wrap1:hover {
+	background-image: url(../images/gatosventa.jpg);
+	background-size: cover;
+	background-position: center center;
+	background-attachment: local;
+	transition: all .5s;
+}
+
+.service-wrap1:hover:before {
+	background: rgba(0, 0, 0, 0.2901960784313726);
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	left: 0px;
+	content: "";
+	top: 0;
+	opacity: 1;
+}
+
+.service-wrap1:hover h4,
+.service-wrap1:hover p {
+	color: $color_rosa;
+}
+
+
+.service-wrap1 h4 {
+	font-weight: 600;
+	color: #1e2331;
+	margin-bottom: 17px;
+	font-size: 18px;
+	text-transform: capitalize;
+	position: relative;
+}
+
+.service-wrap1 img {
+	font-size: 14px;
+	font-weight: 600;
+	position: relative;
+	color: $color_vinotinto;
+}
+
+
+/*caja 2 */
+
+.service-wrap2 {
+	border: 1px solid #e6e6e6;
+	padding: 50px 30px;
+	position: relative;
+}
+
+.service-wrap2 p {
+	position: relative;
+}
+
+.service-wrap2:hover {
+	background-image: url(../images/pastorbelgaventa.jpg);
+	background-size: cover;
+	background-position: center center;
+	background-attachment: local;
+	transition: all .5s;
+}
+
+.service-wrap2:hover:before {
+	background: rgba(0, 0, 0, 0.2901960784313726);
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	left: 0px;
+	content: "";
+	top: 0;
+	opacity: 1;
+}
+
+.service-wrap2:hover h4,
+.service-wrap2:hover p {
+	color: $color_rosa;
+}
+
+
+.service-wrap2 h4 {
+	font-weight: 600;
+	color: #1e2331;
+	margin-bottom: 17px;
+	font-size: 18px;
+	text-transform: capitalize;
+	position: relative;
+}
+
+.service-wrap2 a {
+	font-size: 14px;
+	font-weight: 600;
+	position: relative;
+	color: $color_vinotinto;
+}
+
+
+/*caja 3 */
+
+.service-wrap3 {
+	border: 1px solid #e6e6e6;
+	padding: 50px 30px;
+	position: relative;
+}
+
+.service-wrap3 p {
+	position: relative;
+}
+
+.service-wrap3:hover {
+	background-image: url(../images/pomeraniaventa.png);
+	background-size: cover;
+	background-position: center center;
+	background-attachment: local;
+	transition: all .5s;
+}
+
+.service-wrap3:hover:before {
+	background: rgba(0, 0, 0, 0.2901960784313726);
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	left: 0px;
+	content: "";
+	top: 0;
+	opacity: 1;
+}
+
+.service-wrap3:hover h4,
+.service-wrap3:hover p {
+	color: $color_rosa;
+}
+
+.service-wrap3 h4 {
+	font-weight: 600;
+	color: #1e2331;
+	margin-bottom: 17px;
+	font-size: 18px;
+	text-transform: capitalize;
+	position: relative;
+}
+
+.service-wrap3 a {
+	font-size: 14px;
+	font-weight: 600;
+	position: relative;
+	color: $color_vinotinto;
+}
+
+
+/*caja 4 */
+
+.service-wrap4 {
+	border: 1px solid #e6e6e6;
+	padding: 50px 30px;
+	position: relative;
+}
+
+.service-wrap4 p {
+	position: relative;
+}
+
+.service-wrap4:hover {
+	background-image: url(../images/pastorbelgaventa3.jpg);
+	background-size: cover;
+	background-position: center center;
+	background-attachment: local;
+	transition: all .5s;
+}
+
+.service-wrap4:hover:before {
+	background: rgba(0, 0, 0, 0.2901960784313726);
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	left: 0px;
+	content: "";
+	top: 0;
+	opacity: 1;
+}
+
+.service-wrap4:hover h4,
+.service-wrap4:hover p {
+	color: $color_rosa;
+}
+
+.service-wrap4 h4 {
+	font-weight: 600;
+	color: #1e2331;
+	margin-bottom: 17px;
+	font-size: 18px;
+	text-transform: capitalize;
+	position: relative;
+}
+
+.service-wrap4 a {
+	font-size: 14px;
+	font-weight: 600;
+	position: relative;
+	color: $color_vinotinto;
+}
+
+
+/*caja 5 */
+
+.service-wrap5 {
+	border: 1px solid #e6e6e6;
+	padding: 50px 30px;
+	position: relative;
+}
+
+.service-wrap5 p {
+	position: relative;
+}
+
+.service-wrap5:hover {
+	background-image: url(../images/pomventa.png);
+	background-size: cover;
+	background-position: center center;
+	background-attachment: local;
+	transition: all .5s;
+}
+
+.service-wrap5:hover:before {
+	background: rgba(0, 0, 0, 0.2901960784313726);
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	left: 0px;
+	content: "";
+	top: 0;
+	opacity: 1;
+}
+
+.service-wrap5:hover h4,
+.service-wrap5:hover p {
+	color: $color_rosa;
+}
+
+.service-wrap5 h4 {
+	font-weight: 600;
+	color: #1e2331;
+	margin-bottom: 17px;
+	font-size: 18px;
+	text-transform: capitalize;
+	position: relative;
+}
+
+.service-wrap5 a {
+	font-size: 14px;
+	font-weight: 600;
+	position: relative;
+	color: $color_vinotinto;
+}
+
+
+/*caja 6 */
+
+.service-wrap6 {
+	border: 1px solid #e6e6e6;
+	padding: 50px 30px;
+	position: relative;
+}
+
+.service-wrap6 p {
+	position: relative;
+}
+
+.service-wrap6:hover {
+	background-image: url(../images/gatoventa3.jpg);
+	background-size: cover;
+	background-position: center center;
+	background-attachment: local;
+	transition: all .5s;
+}
+
+.service-wrap6:hover:before {
+	background: rgba(0, 0, 0, 0.2901960784313726);
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	left: 0px;
+	content: "";
+	top: 0;
+	opacity: 1;
+}
+
+.service-wrap6:hover h4,
+.service-wrap6:hover p {
+	color: $color_rosa;
+}
+
+.service-wrap6 h4 {
+	font-weight: 600;
+	color: #1e2331;
+	margin-bottom: 17px;
+	font-size: 18px;
+	text-transform: capitalize;
+	position: relative;
+}
+
+.service-wrap6 a {
+	font-size: 14px;
+	font-weight: 600;
+	position: relative;
+	color: $color_vinotinto;
+}
+
+
+.fontcontactbtn {
+	color: white;
+}
 
